@@ -9,7 +9,7 @@ El tapete original necesita `+5V` para energizar su electronica. En este mod se 
 ```mermaid
 flowchart LR
     HOST&POWER["PC / DAW / Host USB / "5V + GND"] --> MICRO["Arduino Micro"]
-    MICRO -->|"USB MIDI"|
+    MICRO --> |"USB MIDI"|
     PADS["Pads y pedales del tapete"] -->|"Senales de trigger"| INPUTS["D2 a D10"]
     INPUTS --> MICRO
     GND["Tierra comun"] --- MICRO
